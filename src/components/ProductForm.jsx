@@ -2,8 +2,6 @@ import React, {useState} from 'react'
 import axios from 'axios';
 
 
-
-
 function ProductForm() {
     const [tittle, setTittle] = useState("")
     const [price, setPrice] = useState("")
@@ -21,7 +19,7 @@ function ProductForm() {
     }
 
 
-  return (
+return (
     <form onSubmit={onSubmitHandler}>
         <p>
             <label>Tittle</label>
@@ -38,7 +36,7 @@ function ProductForm() {
         <input type="submit" />
 
     </form>
-  )
+)
 }
 
 export default ProductForm
