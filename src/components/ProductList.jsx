@@ -15,10 +15,11 @@ function ProductList(props) {
           })
   }
 
+  
   return (
     <div>{products.map((product, idx)=>
     <>
-    <Link key={product._id} to={`/api/product/${product._id}`}>
+    <Link key={idx} to={`/api/product/${product._id}`}>
     <p key={idx}>{product.tittle}</p>    
     </Link> 
     <button onClick={(e)=>{deleteProduct(product._id)}}>

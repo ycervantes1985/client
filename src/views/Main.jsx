@@ -19,10 +19,10 @@ function Main() {
                 setLoaded(true);
                 
             });
-    },[setProducts])
+    },[products])
 
-    const removeFromDom = productId => {
-      setProducts(products.filter((product) => product._id !== productId));
+    const removeFromDom = (productId) => {
+      setProducts(products?.filter(product=> product._id !== productId));
   }
     
   return (
